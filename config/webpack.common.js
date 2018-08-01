@@ -1,14 +1,14 @@
-const path = require('path');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const devMode = process.env.NODE_ENV !== 'production';
+let devMode = 'production' !== process.env.NODE_ENV;
 
 module.exports = {
   entry: {
     app: './client/src/index.js'
   },
   output: {
-    filename: '[name].js',
+    filename: devMode ? '[name].js' : '[hash].[name].js',
     chunkFilename: '[name].chunk.js'
   },
   module: {
@@ -40,6 +40,10 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(['dist']),
+    new MiniCssExtractPlugin({
+      filename: devMode ? '[name].css' : '[name].[hash].css',
+      chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
+    }),
     new HtmlWebpackPlugin({ 
       template: 'client/src/index.html',
     }),
