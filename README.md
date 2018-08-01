@@ -1,3 +1,3 @@
-# VitaTee init 
+# VitaTee
 
-维他，练练py
+webpack4, python, react
