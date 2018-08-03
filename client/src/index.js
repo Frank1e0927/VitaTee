@@ -6,7 +6,7 @@ import './index.scss';
 const App = () => {
   return (
     <div>
-      <h3>垃圾webpack4 ddd</h3>
+      <h3>beautiful start</h3>
     </div>
   );
 }
