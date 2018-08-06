@@ -8,7 +8,7 @@ import './index.scss';
 const App = () => {
   return (
     <Provider store={store} >
-      <h3>beautiful start</h3>
+      <h3>beautiful start, game start</h3>
     </Provider>
   );
 }
