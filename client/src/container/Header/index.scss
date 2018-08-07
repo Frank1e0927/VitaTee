@@ -9,16 +9,17 @@
     left: 50%;
     transform:translate( -50%, 70%);
     background: #F9AA33;
-    border-radius: 100%
+    border-radius: 100%;
+    transition: 0.4s;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
   }
   &-half-left {
-    // background-color: #344955;
     height: 100%;
     width: 100%;
     background: radial-gradient(circle at bottom right, transparent 40px, #344955 0) bottom right
   }
   &-half-right {
-    background-color: #344955;
     height: 100%;
     width: 100%;
     background: radial-gradient(circle at bottom left, transparent 40px, #344955 0) bottom left;
