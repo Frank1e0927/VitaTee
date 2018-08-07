@@ -1,5 +1,7 @@
 import React from 'react'
+import './index.scss'
+
 const Header = () => (
-  <div>i am header now</div>
+  <div className="header">i am header now</div>
 )
 export default Header
