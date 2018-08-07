@@ -1,4 +1,4 @@
 import React, { Componet } from 'react'
-const Header = () => (
+export const Header = () => (
   <div>i am header now</div>
 )
