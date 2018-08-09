@@ -3,7 +3,7 @@ import './index.scss'
 
 class Header extends React.Component {
   handleClick = () => {
-    console.log('123')
+
   }
   render() {
     return (
